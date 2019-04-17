@@ -4,8 +4,28 @@
  *  OĞUZHAN TAŞIMAZ 17020141 KAAN TECIK 170201069
  *  KOCAELI UNIVERSITESI PROGRAMLAMA LABORATUVARI 2 - 2. PROJE
  *  09.04.2019
+ * =================================
+ * LCD pin              Connect to
+ * ---------------------------------
+ * 01 - GND             GND
+ * 02 - VCC             3.3V
+ * 03 - Contrast        Potentiometer mid
+ * 04 - RS              (PB_0)
+ * 05 - R/W             GND
+ * 06 - EN              (PB_1)
+ * 07 - DB0             GND
+ * 08 - DB1             GND
+ * 09 - DB2             GND
+ * 10 - DB3             GND
+ * 11 - DB4             (PB_4)
+ * 12 - DB5             (PB_5)
+ * 13 - DB6             (PB_6)
+ * 14 - DB7             (PB_7)
+ * 15 - BL+             +
+ * 16 - BL-             -
+ * ================================
 */
-
+   
 LiquidCrystal lcd(PB_0, PB_1, PB_4, PB_5, PB_6, PB_7);
 const int buttonPin1 = PUSH2;  //TIVA SAG
 const int buttonPin2 = PD_2;   //1TL  1
@@ -14,6 +34,8 @@ const int buttonPin4 = PD_6;   //25KRS  3
 const int buttonPin5 = PD_7;   //SECIM  4
 const int buttonPin6 = PUSH1;  //TIVA SOL
 const int buttonPin7 = PA_2;  //EN SOL
+const int successLed = PC_4;
+const int failLed = PC_5;
 const int redPin =  RED_LED;
 const int greenPin =  GREEN_LED;
 const int bluePin = BLUE_LED;
@@ -116,6 +138,8 @@ void loop()
     pinMode(redPin, OUTPUT); 
     pinMode(greenPin, OUTPUT); 
     pinMode(bluePin, OUTPUT); 
+    pinMode(successLed, OUTPUT); 
+    pinMode(failLed, OUTPUT); 
     pinMode(buttonPin1, INPUT_PULLUP);
     pinMode(buttonPin2, INPUT_PULLUP);
     pinMode(buttonPin3, INPUT_PULLUP);
@@ -373,6 +397,8 @@ void loop()
     {
       digitalWrite(redPin, LOW); 
       digitalWrite(greenPin, LOW); 
+      digitalWrite(successLed, LOW);
+      digitalWrite(failLed, LOW);  
     } 
     else {
       minusCounters();
@@ -387,6 +413,7 @@ void loop()
       if(randomNumber == 2)
       {
         digitalWrite(redPin, HIGH);
+        digitalWrite(failLed, HIGH); 
         lcd.clear();
         lcd.print("PARA SIKISTI");
         lcd.setCursor(0,1);
@@ -394,6 +421,7 @@ void loop()
       }
       else
       {
+        digitalWrite(successLed, HIGH); 
         digitalWrite(greenPin, HIGH);
         lcd.clear();
         lcd.print("PARA USTUNUZ");
