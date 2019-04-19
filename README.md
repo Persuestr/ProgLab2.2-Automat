@@ -67,11 +67,17 @@ LCD pin              Bağlandığı yer
  Buttons	 PHASE1		 PHASE2		PORTS
 --------------------------------------------------------
  1 TL		-ÇAY 	 - 			(PD_2)
+ 
  50 Kuruş	-SU 	 - 			(PD_3)
+ 
  25 Kuruş	-BISKUVI - 			(PD_6)
+ 
  FINISH		-ENDOFPH1-	-ENDOFPH2- 	(PUSH2)
+ 
  TIVA-SOL			-CIKOLATA-	(PUSH1)
+ 
  SAGDAN4			-KAHVE	 -	(PD_7)
+ 
  EN-SOL				-RESET   -	(PA_2)
  
  
