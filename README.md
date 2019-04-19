@@ -42,43 +42,37 @@ Projeyi çalıştırmak için Energia IDE'si kullanıldı.
 
 LCD üzerindeki bağlantılar şu şekilde kullanılmalıdır:
 
-LCD pin              Bağlandığı yer
- ---------------------------------
- 01 - GND             GND, pot
- 02 - VCC             +5V, pot
- 03 - Contrast        Pot'un ortası
- 04 - RS              (PB_0)
- 05 - R/W             GND
- 06 - EN              (PB_1)
- 07 - DB0             GND
- 08 - DB1             GND
- 09 - DB2             GND
- 10 - DB3             GND
- 11 - DB4             (PB_4)
- 12 - DB5             (PB_5)
- 13 - DB6             (PB_6)
- 14 - DB7             (PB_7)
- 15 - BL+             +5V
- 16 - BL-             GND
+- LCD pin              Bağlandığı yer
+- ---------------------------------
+- 01 - GND             GND, pot
+- 02 - VCC             +5V, pot
+- 03 - Contrast        Pot'un ortası
+- 04 - RS              (PB_0)
+- 05 - R/W             GND
+- 06 - EN              (PB_1)
+- 07 - DB0             GND
+- 08 - DB1             GND
+- 09 - DB2             GND
+- 10 - DB3             GND
+- 11 - DB4             (PB_4)
+-  12 - DB5             (PB_5)
+- 13 - DB6             (PB_6)
+- 14 - DB7             (PB_7)
+- 15 - BL+             +5V
+- 16 - BL-             GND
 
 
  Breadboard üzerindeki butonlar mikroişlemcinin şu portlarına yerleştirilmelidir:
 
- Buttons	 PHASE1		 PHASE2		PORTS
---------------------------------------------------------
- 1 TL		-ÇAY 	 - 			(PD_2)
- 
- 50 Kuruş	-SU 	 - 			(PD_3)
- 
- 25 Kuruş	-BISKUVI - 			(PD_6)
- 
- FINISH		-ENDOFPH1-	-ENDOFPH2- 	(PUSH2)
- 
- TIVA-SOL			-CIKOLATA-	(PUSH1)
- 
- SAGDAN4			-KAHVE	 -	(PD_7)
- 
- EN-SOL				-RESET   -	(PA_2)
+ - Buttons	 PHASE1		 PHASE2		PORTS
+- ------------------------------------------------------
+ - 1 TL		-ÇAY 	 - 			(PD_2)
+ - 50 Kuruş	-SU 	 - 			(PD_3)
+ - 25 Kuruş	-BISKUVI - 			(PD_6)
+ - FINISH		-ENDOFPH1-	-ENDOFPH2- 	(PUSH2)
+ - TIVA-SOL			-CIKOLATA-	(PUSH1)
+ - SAGDAN4			-KAHVE	 -	(PD_7)
+ - EN-SOL				-RESET   -	(PA_2)
  
  
 4-KODU DERLEMEK:
