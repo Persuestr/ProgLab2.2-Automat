@@ -42,8 +42,8 @@ Projeyi çalıştırmak için Energia IDE'si kullanıldı.
 
 LCD üzerindeki bağlantılar şu şekilde kullanılmalıdır:
 
-- LCD pin              Bağlandığı yer
-- ---------------------------------
+LCD pin              Bağlandığı yer
+---------------------------------
 - 01 - GND             GND, pot
 - 02 - VCC             +5V, pot
 - 03 - Contrast        Pot'un ortası
@@ -64,8 +64,8 @@ LCD üzerindeki bağlantılar şu şekilde kullanılmalıdır:
 
  Breadboard üzerindeki butonlar mikroişlemcinin şu portlarına yerleştirilmelidir:
 
- - Buttons	 PHASE1		 PHASE2		PORTS
-- ------------------------------------------------------
+  Buttons	 PHASE1		 PHASE2		PORTS
+------------------------------------------------------
  - 1 TL		-ÇAY 	 - 			(PD_2)
  - 50 Kuruş	-SU 	 - 			(PD_3)
  - 25 Kuruş	-BISKUVI - 			(PD_6)
