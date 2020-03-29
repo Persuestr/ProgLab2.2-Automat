@@ -1,4 +1,4 @@
-# ProgLab2.2-Automat
+# ProgLab2.2-Vending Machine
 Programming Lab Project 2 made with Tiva™ C Series TM4C123G LaunchPad using Energia IDE
 
 En az sayıda bozuk para verme problemi
